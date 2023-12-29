@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --rc: hsl(0, 100%, 74%);
+  --gn: hsl(154, 59%, 51%);
+  --bc: hsl(248, 32%, 49%);
+  --dbc: hsl(249, 10%, 26%);
+  --gbc: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: var(--rc) url("./../images/bg-intro-desktop.png");
+}
+
+.container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .form-description {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container .form-description h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.container p {
+  color: #fff;
+  font-size: 16px;
+}
