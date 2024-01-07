@@ -168,7 +168,7 @@ footer a {
   color: var(--bc);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 375px) {
   .form-description {
     margin: 20px;
     padding: 20px;
