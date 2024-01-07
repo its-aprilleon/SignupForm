@@ -14,6 +14,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background: var(--rc) url("./../images/bg-intro-desktop.png");
+  margin: 0;
 }
 
 .container {
@@ -44,10 +45,52 @@ body {
 .form {
   background-color: #fff;
   width: 100%;
-  padding: 30px 40px;
-  border-radius: 5px;
+  padding: 40px;
+  border-radius: 6px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   font-family: inherit;
+}
+.form-control {
+  padding: 0;
+  border: none;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control input {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  border: 3px solid #bbb;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.form-control.error input {
+  border-color: var(--rc);
+}
+
+.form-control img {
+  visibility: hidden;
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+}
+
+.form-control.error img {
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  color: var(--rc);
+  position: absolute;
+  right: 0;
+}
+
+.form-control.error small {
+  visibility: visible;
 }
 
 .container .tryitbtn,
@@ -63,7 +106,7 @@ body {
   padding: 15px;
 }
 
-.container .tryitbtn {
+.tryitbtn {
   margin-bottom: 30px;
 }
 
@@ -77,11 +120,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow: none;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.form .btndescription {
+.btndescription {
   font-size: 12px;
   text-align: center;
   color: var(--gbc);
@@ -90,11 +132,6 @@ body {
 .btndescription .tms {
   color: var(--rc);
   font-weight: bold;
-}
-
-.form-control img {
-  /* visibility: hidden; */
-  position: absolute;
 }
 
 /* 
