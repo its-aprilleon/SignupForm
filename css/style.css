@@ -10,9 +10,9 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body {
+  font-family: "Poppins", sans-serif;
   background: var(--rc) url("./../images/bg-intro-desktop.png");
 }
 
@@ -23,18 +23,83 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .form-description {
+
+.form-description {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.container .form-description h1 {
+.form-description h1 {
   font-size: 50px;
   font-weight: bold;
   color: #fff;
+  margin-bottom: 30px;
 }
 
-.container p {
+.form-description p {
   color: #fff;
   font-size: 16px;
 }
+
+.form {
+  background-color: #fff;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+}
+
+.container .tryitbtn,
+.form .submitbtn {
+  width: 100%;
+  background-color: var(--bc);
+  border: none;
+  color: var(--gbc);
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 6px 5px hsla(249, 10%, 26%, 0.3);
+  padding: 15px;
+}
+
+.container .tryitbtn {
+  margin-bottom: 30px;
+}
+
+.container .tryitbtn strong {
+  color: #fff;
+}
+
+.form .submitbtn {
+  color: #fff;
+  background-color: var(--gn);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form .btndescription {
+  font-size: 12px;
+  text-align: center;
+  color: var(--gbc);
+}
+
+.btndescription .tms {
+  color: var(--rc);
+  font-weight: bold;
+}
+
+.form-control img {
+  /* visibility: hidden; */
+  position: absolute;
+}
+
+/* 
+@media (max-width: 480px) {
+  .container {
+  }
+} 
+*/
